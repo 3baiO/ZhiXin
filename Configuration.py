@@ -3,9 +3,7 @@ import streamlit as st
 from openai import OpenAI
 import os
 
-os.environ["http_proxy"] = "http://localhost:7890"
-os.environ["https_proxy"] = "http://localhost:7890"
-openai_key = os.environ.get("OPENAI_API_KEY")
+openai_key = ("OPENAI_API_KEY")
 
 st.title("配置页面：")
 st.sidebar.markdown('在完成前期准备后请点击“智心”')  # 在侧边栏添加文字

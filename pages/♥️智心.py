@@ -3,7 +3,7 @@ import streamlit as st
 from openai import OpenAI
 import os
 
-openai_key = ("OPENAI_API_KEY")
+openai_key=st.secrets["OPENAI_API_KEY"]
 
 # 设置页面标题
 st.title("智心：")

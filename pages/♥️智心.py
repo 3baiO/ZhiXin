@@ -3,10 +3,7 @@ import streamlit as st
 from openai import OpenAI
 import os
 
-# 设置代理环境变量
-os.environ["http_proxy"] = "http://localhost:7890"
-os.environ["https_proxy"] = "http://localhost:7890"
-openai_key = os.environ.get("OPENAI_API_KEY")
+openai_key = ("OPENAI_API_KEY")
 
 # 设置页面标题
 st.title("智心：")

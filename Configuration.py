@@ -3,7 +3,7 @@ import streamlit as st
 from openai import OpenAI
 import os
 
-openai_key=st.connection('OPENAI_API_KEY')
+openai_key=st.secrets["OPENAI_API_KEY"]
 
 st.title("配置页面：")
 st.sidebar.markdown('在完成前期准备后请点击“智心”')  # 在侧边栏添加文字
